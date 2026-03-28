@@ -1,4 +1,5 @@
-FROM python:3.12-slim
+#FROM python:3.12-slim
+FROM --platform=linux/amd64 python:3.12-slim
 
 ENV SQLALCHEMY_DATABASE_URI=sqlite:///:memory:
 
